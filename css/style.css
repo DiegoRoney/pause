@@ -6,6 +6,21 @@ body, html {
     font-family: 'Dancing Script', cursive;
     font-size: 1.2rem;
 }
+.conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.navbar{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #311717;
+ 
+}
 
 .navbar a{
     color: aliceblue;
@@ -13,30 +28,56 @@ body, html {
 .navbar a:hover{
     color: rgb(255, 136, 0);
 }
-.hero-image {
+
+
+
+/*hero generador*/
+.masthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
+    overflow: hidden;
+    background-size: cover !important;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%),
+    url("../img/img1.jpg") no-repeat center center scroll;
+    z-index: -100;
+  }
   
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url("../img/img1.jpg"); 
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    color: #eee;
+    font-size: 11vmin;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+  }
 
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;  
-  font-size: 20px;  
-}
-
-.hero-text h1 {
-  font-size: 50px;
-  font-weight: bold; 
-  
-}
+  button {
+    background: #098191;
+    transition: background ease .25s;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  button:hover {
+    background: #63b6b8
+  }
+  button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
