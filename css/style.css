@@ -6,30 +6,41 @@ body, html {
     font-family: 'Dancing Script', cursive;
     font-size: 1.2rem;
 }
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+a :hover{
+    color: rgb(255, 136, 0);
+}
 .conteudo{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    
-    
+     
 }
-.navbar{
-    position: sticky;
-    position: -webkit-sticky;
+.navbar{  
+  justify-content: space-between;
+  display: flex;  
+    position: absolute;
+    /* position: sticky;
+    position: -webkit-sticky; */
     top: 0;
-    background-color: #311717;
+    background-color: #31171700;
+    color: #fff;
+    padding: 15px;
  
 }
-
 .navbar a{
     color: aliceblue;
 }
 .navbar a:hover{
     color: rgb(255, 136, 0);
 }
-
-
+.container-fluid{
+  display: flex;
+  justify-items: space-between;
+}
 
 /*hero generador*/
 .masthead {
@@ -59,7 +70,7 @@ body, html {
   }
 
   button {
-    background: #098191;
+    background: rgb(255, 136, 0);
     transition: background ease .25s;
     border-radius: 5px;
     display: inline-block;
@@ -75,9 +86,19 @@ body, html {
     -moz-appearance: none;
   }
   button:hover {
-    background: #63b6b8
+    background: #311717;
   }
   button:focus {
     outline: 1px solid #fff;
     outline-offset: -4px;
+  }
+
+  .footer {
+    
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #311717;
+    color: #eee;
+    text-align: center;    
   }
